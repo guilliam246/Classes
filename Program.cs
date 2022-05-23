@@ -1,4 +1,7 @@
-﻿namespace Classes
+﻿using Classes.Math;
+
+
+namespace Classes
 {
 
     class Program
@@ -10,6 +13,10 @@
             john.LastName = "Smith";
             john.Introduce();
 
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            System.Console.WriteLine(result);
+            
         }
     }
 }
