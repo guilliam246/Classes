@@ -13,9 +13,17 @@ namespace Classes
             john.LastName = "Smith";
             john.Introduce();
 
+            var james = new Person();
+            james.FirstName = "James";
+            james.LastName = "Doe";
+            james.Introduce();
+
             Calculator calculator = new Calculator();
             var result = calculator.Add(1, 2);
             System.Console.WriteLine(result);
+            var resultMulti = calculator.Multiply(5, 7);
+            System.Console.WriteLine(resultMulti);
+
             
         }
     }
